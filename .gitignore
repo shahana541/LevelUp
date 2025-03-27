@@ -17,3 +17,6 @@ logs/
 *.log
 .DS_Store
 dist/
+
+# Ignore Firebase credentials
+server/config/firebaseAdmin.json

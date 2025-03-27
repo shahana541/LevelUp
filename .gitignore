@@ -1,0 +1,19 @@
+# Ignore environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# Ignore Firebase credentials (if stored separately)
+firebase-admin.json
+
+# Ignore `node_modules`
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore logs and cache
+logs/
+*.log
+.DS_Store
+dist/

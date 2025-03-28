@@ -1,0 +1,92 @@
+/* src/styles.css */
+
+/* CSS Variables */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #0074D9;
+    --secondary-color: #FF4136;
+    --font-family: "Poppins", sans-serif;
+    --transition-duration: 0.3s;
+  }
+  
+  body {
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color var(--transition-duration), color var(--transition-duration);
+  }
+  
+  /* Buttons */
+  button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-family: inherit; /* Ensure buttons use the same font as the body */
+    transition: background-color var(--transition-duration);
+  }
+  
+  button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  /* Scrollbar Styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+    transition: background-color var(--transition-duration);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+  }
+  
+  /* Utility Classes */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    button {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+    }
+  
+    .container {
+      padding: 0 0.5rem;
+    }
+  }
